@@ -1,0 +1,107 @@
+/* Modal background */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* Modal box */
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 420px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Close button */
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+
+    font-size: 24px;
+    color: #777;
+
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #222;
+}
+
+
+/* Contact Form */
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.modal-content form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.modal-content label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-content input {
+    padding: 10px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.modal-content input:focus {
+    border-color: #3154b8;
+}
+
+
+/* Submit button */
+
+.modal-content form button {
+    padding: 11px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #3154b8;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.modal-content form button:hover {
+    background: #26449a;
+}
