@@ -1,4 +1,5 @@
 import { useState } from "react";
+import API_URL from "./api";
 
 const ContactForm = ({
     existingContact = {},
@@ -22,8 +23,8 @@ const ContactForm = ({
         };
 
         const url = updating
-            ? `http://127.0.0.1:5000/update_contact/${existingContact.id}`
-            : "http://127.0.0.1:5000/create_contact";
+            ? `${API_URL}/update_contact/${existingContact.id}`
+            : `${API_URL}/create_contact`;
 
         try {
 

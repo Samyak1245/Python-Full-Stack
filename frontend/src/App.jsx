@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ContactList from "./ContactList";
 import ContactForm from "./ContactForm";
+import API_URL from "./api";
 import "./App.css";
 
 function App() {
@@ -10,9 +11,7 @@ function App() {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch(
-                "http://127.0.0.1:5000/contacts"
-            );
+            const response = await fetch(`${API_URL}/contacts`);
 
             if (!response.ok) {
                 throw new Error("Failed to fetch contacts");

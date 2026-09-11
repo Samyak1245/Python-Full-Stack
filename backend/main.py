@@ -127,10 +127,12 @@ def delete_contact(contact_id):
         }), 500
 
 
-# Start the Flask server
+# Create the database table when the application starts. This also runs when
+# Gunicorn imports the application on Render.
+with app.app_context():
+    db.create_all()
+
+
+# Start the Flask development server locally.
 if __name__ == "__main__":
-
-    with app.app_context():
-        db.create_all()
-
     app.run(debug=True)

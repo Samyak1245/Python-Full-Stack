@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactList.css";
+import API_URL from "./api";
 
 const ContactList = ({
     contacts,
@@ -17,7 +18,7 @@ const ContactList = ({
 
         try {
             const response = await fetch(
-                `http://127.0.0.1:5000/delete_contact/${id}`,
+                `${API_URL}/delete_contact/${id}`,
                 {
                     method: "DELETE"
                 }
