@@ -8,6 +8,6 @@ export default defineConfig({
   },
   preview: {
     host: "0.0.0.0",
-    allowedHosts: ["python-full-stack.onrender.com"],
+    allowedHosts: ["python-full-stack-el34.onrender.com"],
   },
 });
