@@ -59,15 +59,3 @@ Open the local URL shown by Vite, usually `http://localhost:5173`.
 | PATCH | `/update_contact/:id` | Update a contact |
 | DELETE | `/delete_contact/:id` | Delete a contact |
 
-## Uploading to GitHub
-
-The `.gitignore` excludes generated files, virtual environments, `node_modules`, build output, and the local SQLite database. From the project root, run:
-
-```powershell
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
